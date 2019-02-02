@@ -6,7 +6,7 @@ import {MediaMatcher} from '@angular/cdk/layout';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponentDashboard implements OnDestroy {
+export class HomeComponentMain implements OnDestroy {
   public mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;

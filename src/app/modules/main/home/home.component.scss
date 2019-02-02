@@ -1,0 +1,23 @@
+mat-sidenav-container{
+    position: absolute;
+    height: calc(100% - 64px);
+    width: 100%;
+
+    mat-sidenav{
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #263238;
+        color: white;
+
+
+        .matNavContainer{
+            .profilContainer{
+                img{
+                    height: 170px;
+                    margin: 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

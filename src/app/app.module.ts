@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { DashboardModule }     from './modules/dashboard/dashboard.module';
+import { MainModule }     from './modules/main/main.module';
 import { MaterialModule } from './material.module'
 
 @NgModule({
@@ -16,7 +16,7 @@ import { MaterialModule } from './material.module'
     BrowserModule,
     MaterialModule,
     AppRoutingModule,
-    DashboardModule,
+    MainModule,
     BrowserAnimationsModule
   ],
   providers: [],
