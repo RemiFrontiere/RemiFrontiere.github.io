@@ -1,19 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "./node_modules/pug-loader/index.js!./src/app/modules/main/home/home.component.pug":
-/*!********************************************************************************!*\
-  !*** ./node_modules/pug-loader!./src/app/modules/main/home/home.component.pug ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var pug = __webpack_require__(/*! ../../../../../node_modules/pug-runtime/index.js */ "./node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv id=\"homeDashboardContainer\"\u003E\u003Cmat-toolbar class=\"example-toolbar\" color=\"primary\"\u003E\u003Cdiv class=\"langFlag flag\" [ngClass]=\"{'flag-fr':translate.currentLang == 'fr', 'flag-gb':translate.currentLang == 'en'}\" (click)=\"changeLang()\"\u003E\u003C\u002Fdiv\u003E\u003Cbutton class=\"menu\" mat-icon-button=\"\"\u003E\u003Cmat-icon\u003Emenu\u003C\u002Fmat-icon\u003E\u003C\u002Fbutton\u003E\u003Cdiv class=\"toolBarContainer\"\u003E\u003Cdiv class=\"topText\"\u003E{{ '1' | translate }}\u003C\u002Fdiv\u003E\u003Cdiv class=\"bottomText\"\u003E\u003Cdiv class=\"txt\"\u003E{{ '2' | translate }}\u003C\u002Fdiv\u003E\u003Cdiv class=\"txt\"\u003E{{ '3' | translate }}\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fmat-toolbar\u003E\u003Cdiv class=\"globalContainer\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
-module.exports = template;
-
-/***/ }),
-
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -338,15 +324,14 @@ var CssPartComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/modules/main/home/home.component.pug":
-/*!******************************************************!*\
-  !*** ./src/app/modules/main/home/home.component.pug ***!
-  \******************************************************/
+/***/ "./src/app/modules/main/home/home.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/modules/main/home/home.component.html ***!
+  \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var req = __webpack_require__(/*! !./node_modules/pug-loader!./src/app/modules/main/home/home.component.pug */ "./node_modules/pug-loader/index.js!./src/app/modules/main/home/home.component.pug");
-module.exports = (req['default'] || req).apply(req, [])
+module.exports = "<div id=\"homeDashboardContainer\">\r\n    <mat-toolbar class=\"example-toolbar\" color=\"primary\">\r\n        <div class=\"langFlag flag\" [ngClass]=\"{'flag-fr':translate.currentLang == 'fr', 'flag-gb':translate.currentLang == 'en'}\" (click)=\"changeLang()\"></div><button class=\"menu\" mat-icon-button=\"\"><mat-icon>menu</mat-icon></button>\r\n        <div class=\"toolBarContainer\">\r\n            <div class=\"topText\">{{ '1' | translate }}</div>\r\n            <div class=\"bottomText\">\r\n                <div class=\"txt\">{{ '2' | translate }}</div>\r\n                <div class=\"txt\">{{ '3' | translate }}</div>\r\n            </div>\r\n        </div>\r\n    </mat-toolbar>\r\n    <div class=\"globalContainer\"></div>\r\n</div>\r\n<!-- //- <div id=\"homeDashboardContainer\">\r\n//-   <mat-toolbar color=\"primary\" class=\"example-toolbar\">\r\n//-     <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\r\n//-     <h1 class=\"example-app-name\">Rémi Frontière</h1>\r\n//-   </mat-toolbar>\r\n\r\n//-   //- <mat-sidenav-container class=\"example-sidenav-container\"\r\n//-   //-                        [style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\r\n//-   //-   <mat-sidenav #snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\r\n//-   //-                [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\r\n//-   //-     <div class=\"matNavContainer\">\r\n//-   //-       <div class=\"profilContainer\">\r\n//-   //-         <img src=\"assets/pictureSmall.png\" alt=\"\">\r\n//-   //-       </div>\r\n//-   //-       <mat-nav-list>\r\n//-   //-           <a mat-list-item routerLink=\".\">Dashboard</a>\r\n//-   //-           <a mat-list-item routerLink=\"css\">CSS</a>\r\n//-   //-       </mat-nav-list>\r\n//-   //-     </div>\r\n//-   //-   </mat-sidenav>\r\n\r\n\r\n\r\n//-     <mat-sidenav-content>\r\n//-       <router-outlet></router-outlet>\r\n//-     </mat-sidenav-content>\r\n//-   </mat-sidenav-container>\r\n//- </div> -->\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -398,7 +383,7 @@ var HomeComponentMain = /** @class */ (function () {
     HomeComponentMain = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'home-root',
-            template: __webpack_require__(/*! ./home.component.pug */ "./src/app/modules/main/home/home.component.pug"),
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/modules/main/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/modules/main/home/home.component.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["MediaMatcher"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__["TranslateService"]])
@@ -589,17 +574,6 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 
 module.exports = __webpack_require__(/*! D:\Developpement\RemiFrontiere.github.io\src\main.ts */"./src/main.ts");
 
-
-/***/ }),
-
-/***/ 1:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ })
 
