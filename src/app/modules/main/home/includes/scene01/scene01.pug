@@ -1,0 +1,69 @@
+.sceneContainer
+    .fullGateContainer
+        .stargateContainer
+            .stargate-body
+                .stargate-turning-part('[ngClass]'="{'turnAnimation':stargateisTurning}")
+                    .symbolContainer(*ngFor="let symbol of stargateNumberOfSymbols; let i = index", '[ngStyle]'="{'transform': 'rotate('+i*9+'deg)'}")
+                        .buttonSymbol
+                            .symbol {{symbol}}
+                    .stargate-border-1
+                        .borderCubeContainer(*ngFor="let num of stargateExtBorderNumber; let i = index", '[ngStyle]'="{'transform': 'rotate('+i*2.4+'deg)'}")
+                            .borderCube
+                                .cub |
+                .stargate-border-2
+                    .borderCubeContainer(*ngFor="let num of stargateExtBorderNumber; let i = index", '[ngStyle]'="{'transform': 'rotate('+i*2.4+'deg)'}")
+                        .borderCube
+                            .cub x
+                .stargate-border-3
+                    .borderCubeContainer(*ngFor="let num of stargateExtBorderNumber; let i = index", '[ngStyle]'="{'transform': 'rotate('+i*2.4+'deg)'}")
+                        .borderCube
+                            .cub )
+                            .cub (
+
+                .stargate-center('(click)'="rotateStargate()")
+            .chevronsContainer
+                .chevronContainer.chevron1Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron1
+                        .chevronInterior
+                .chevronContainer.chevron2Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron2
+                        .chevronInterior
+                .chevronContainer.chevron3Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron3
+                        .chevronInterior
+                .chevronContainer.chevron4Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron4
+                        .chevronInterior
+                .chevronContainer.chevron5Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron5
+                        .chevronInterior
+                .chevronContainer.chevron6Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron6
+                        .chevronInterior
+                .chevronContainer.chevron7Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron7
+                        .chevronInterior
+                .chevronContainer.chevron8Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron8
+                        .chevronInterior
+                .chevronContainer.chevron9Container
+                    .chevron-border
+                        .chevronBack
+                        .chevron.chevron9
+                        .chevronInterior

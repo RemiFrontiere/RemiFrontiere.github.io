@@ -1,0 +1,309 @@
+.sceneContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fullGateContainer{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .stargateContainer{
+        // margin: 20px;
+        overflow: hidden;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .stargate-body{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        // border: 50px solid #27292f;
+
+        // margin: 85px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .stargate-turning-part{
+            z-index: 4;
+            position: absolute;
+            border: 1px solid #313233; //#313233
+            height: 440px;
+            width: 440px;
+            border-radius: 50%;
+            background-color: #363a3d;
+            transform: rotate(0deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .symbolContainer{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                // transform: rotate(0deg);
+                display: flex;
+                justify-content: center;
+            }
+            .buttonSymbol{
+                position: absolute;
+                width: 32px;
+                height: 31px;
+                display: flex;
+                border-right: 1px solid #2f2f2f;
+                justify-content: center;
+                align-items: center;
+            }
+            .symbol{
+                font-family: 'Stargate';
+                font-size: 18px;
+                font-weight: bold;
+                color: #272a2d;
+                    /* text-shadow: -2px 2px 0 black, -1px 1px 0 black; */
+    /* text-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000; */
+            }
+        }
+        .stargate-border-1{
+            position: absolute;
+            cursor: pointer;
+            z-index: 1000;
+            height: 385px;
+            width: 385px;
+            background-color: #363a3d;
+            border-radius: 50%;
+            border: 1px solid #2f2f2f;
+        }
+        .stargate-border-2{
+            z-index: 2;
+            position: absolute;
+            cursor: pointer;
+            height: 454px;
+            border-top: 1px solid #2f2f2f;
+            background-color: #363a3d;
+            width: 454px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        .stargate-border-3{
+            z-index: 2;
+            position: absolute;
+            cursor: pointer;
+            height: 493px;
+            border-top: 1px solid #363636;
+            background-color: #363a3d;
+            width: 493px;
+            border-radius: 50%;
+            z-index: 1;
+
+            .borderCube{
+                width: 8px;
+                height: 19px !important;
+                border-left: 1px solid #2f2f2f;
+                border-radius: 3px !important;
+
+                .cub{
+                    font-size: 25px !important;
+
+                }
+            }
+        }
+        .borderCubeContainer {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            
+            .borderCube{
+                position: absolute;
+                width: 8px;
+                height: 5px;
+                display: flex;
+                border-right: 1px solid #2f2f2f;
+                justify-content: center;
+                overflow: hidden;
+                align-items: center;
+                color: #2f2f2f;
+
+                .cub {
+                    height: 2px;
+                    width: 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 17px;
+                }
+            }
+        }
+        .stargate-center{
+            border-top: 1px solid #2f2f2f;
+            cursor: pointer;
+            z-index: 1000;
+            height: 375px;
+            width: 375px;
+            background-color: #2e3d55;
+            border-radius: 50%;
+        }
+    }
+    .chevronsContainer{
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+    }
+    .turnAnimation{
+        -webkit-animation:spin 12s linear infinite;
+        -moz-animation:spin 12s linear infinite;
+        animation:spin 12s linear infinite;
+    }
+    .chevronContainer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        transform: rotate(0deg);
+
+        .chevron-border{
+            // top: 0;
+            // position: absolute;
+            width: 90px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            border-top: 6px solid #363a3d;
+        }
+        .chevron{
+            top: 1px;
+            position: absolute;
+            // border-style: solid;
+            // border-width: 30px 15px 0 15px;
+            // border-color: #3a3a3a transparent transparent transparent;
+            -webkit-clip-path: polygon(20% 0%, 80% 0%, 55% 100%, 45% 100%);
+            clip-path: polygon(20% 0%, 80% 0%, 55% 100%, 45% 100%);
+            background-color: #3a3a3a;
+            height: 28px;
+            width: 50px;
+        }
+    }
+    .chevronBack{
+        top: 5px;
+        position: absolute;
+        // border-style: solid;
+        // border-width: 35px 20px 0 20px;
+        // border-color: #313131 transparent transparent transparent;
+        -webkit-clip-path: polygon(10% 0%, 90% 0%, 65% 100%, 35% 100%);
+        clip-path: polygon(10% 0%, 90% 0%, 65% 100%, 35% 100%);
+        height: 32px;
+        width: 50px;
+        background-color:  #313131;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chevronInterior{
+        top: 0px;
+        position: absolute;
+        // border-style: solid;
+        // border-width: 22px 11px 0 11px;
+        // border-color: #cd251c transparent transparent transparent;
+        clip-path: polygon(30% 0%, 70% 0%, 55% 100%, 45% 100%);
+        background: linear-gradient(to bottom, #ff7400 0%,#cc222a 100%);
+        height: 20px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chevron1Container{
+        .chevron1{
+        }
+    }
+    .chevron2Container{
+        transform: rotate(45deg);
+        .chevron2{
+
+        }
+    }
+    .chevron3Container{
+        transform: rotate(81deg);
+        .chevron3{
+
+        }
+    }
+    .chevron4Container{
+        transform: rotate(117deg);
+        .chevron4{
+
+        }
+    }
+    .chevron5Container{
+        transform: rotate(161deg);
+        .chevron5{
+
+        }
+    }
+    .chevron6Container{
+        transform: rotate(198deg);
+        .chevron6{
+
+        }
+    }
+    .chevron7Container{
+        transform: rotate(243deg);
+        .chevron7{
+
+        }
+    }
+    .chevron8Container{
+        transform: rotate(279deg);
+        .chevron8{
+
+        }
+    }
+    .chevron9Container{
+        transform: rotate(315deg);
+        .chevron9{
+
+        }
+    }
+}
+
+@media #{$max-extra-large} {
+}
+@media #{$max-large} {
+}
+@media #{$max-medium} {
+}
+@media #{$max-small} {
+}
+@media #{$max-extra-small} {
+    .fullGateContainer{
+        width: 150% !important
+    }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

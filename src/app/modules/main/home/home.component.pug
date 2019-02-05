@@ -1,11 +1,18 @@
 #homeDashboardContainer
   mat-toolbar.example-toolbar(color='primary')
-    .langFlag('[ngClass]'="{'fr':translate.currentLang == 'fr', 'en':translate.currentLang == 'en'}", '(click)'="changeLang()")
-    button(mat-icon-button='')
+    .langFlag.flag('[ngClass]'="{'flag-fr':translate.currentLang == 'fr', 'flag-gb':translate.currentLang == 'en'}", '(click)'="changeLang()")
+    button.menu(mat-icon-button='')
       mat-icon menu
-    h1.example-app-name {{ '1' | translate }}
+    .toolBarContainer
+      .topText {{ '1' | translate }}
+      .bottomText
+        .txt {{ '2' | translate }}
+        .txt {{ '3' | translate }}
   .globalContainer
-
+    #topPage
+    #scene01Container
+      !=require('./includes/scene01/scene01.pug')
+  
 //- <div id="homeDashboardContainer">
 //-   <mat-toolbar color="primary" class="example-toolbar">
 //-     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
