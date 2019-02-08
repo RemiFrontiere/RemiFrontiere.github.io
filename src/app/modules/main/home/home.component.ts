@@ -13,9 +13,14 @@ export class HomeComponentMain implements OnDestroy {
   
   public audio:HTMLAudioElement;
   public isScrolled:boolean = false;
+
+
   public stargateisTurning:boolean = false;
   public stargateNumberOfSymbols:Array<string> = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'];
   public stargateExtBorderNumber:[] = Array.apply(null, {length: 150}).map(Function.call, Number);
+  public stargateTabletMiniCub:Array<number> = [0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,0,1,0,1,1,1,0,1,0];
+  public showTabletSG:boolean = false;
+  
   // public mobileQuery: MediaQueryList;
   // private _mobileQueryListener: () => void;
 
@@ -30,6 +35,7 @@ export class HomeComponentMain implements OnDestroy {
 
     translate.setDefaultLang('fr');
     translate.use('fr');
+    
   }
 
   ngOnDestroy(): void {
@@ -55,6 +61,10 @@ export class HomeComponentMain implements OnDestroy {
         this.audio.pause();
       }
     }
+  }
+
+  public showTablet(){
+    this.showTabletSG = !this.showTabletSG;
   }
 
   shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
