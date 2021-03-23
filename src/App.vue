@@ -31,10 +31,12 @@ export default {
   data: () => ({
     isInitialized: false,
     drawer: false,
+    images: []
   }),
   mounted: function () {
     this.$i18n.locale  = 'fr'
     this.isInitialized = true;
+
   },  
   methods: {
     changeLang(lang){

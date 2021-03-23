@@ -1,11 +1,12 @@
 <template>
-  <div class="me">
+  <div class="me" id="presentation">
     <v-row>
       <v-col cols="12" md="3" class="hidden-sm-and-down"></v-col>
       <v-col cols="12" md="6">
-        <v-card>
+        <v-card >
           <v-img
             src="https://firebasestorage.googleapis.com/v0/b/portfolio-frontiere.appspot.com/o/me.jpg?alt=media&token=81ef9b32-d9a6-47a1-8947-6c724db385a7"
+            lazy-src="https://firebasestorage.googleapis.com/v0/b/portfolio-frontiere.appspot.com/o/me.jpg?alt=media&token=81ef9b32-d9a6-47a1-8947-6c724db385a7"
           ></v-img>
           <v-card-title>Présentation</v-card-title>
           <v-container>
@@ -24,7 +25,7 @@
             <br />
             <div>
               Après avoir été 3 ans apprenti Menuisier, j'ai choisi de changer
-              de voie. Je suis diplomé d'un
+              de voie. Je suis diplômé d'un
               <strong class="canClick"
                 ><a
                   href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
@@ -40,7 +41,7 @@
                   >Développeur informatique multi-supports</a
                 ></strong
               >
-              que j'ai effectué en alternance sur Annecy.
+              que j'ai effectuée en alternance sur Annecy.
             </div>
             <br />
             <div>
@@ -53,7 +54,7 @@
               qui m'a accompagnée et formée en alternance. J'ai ensuite obtenu un CDI dans
               cette même entreprise pour finalement y rester 3 ans et 6 mois.
             </div>
-            <div>J'ai principalement travaillé sur Angular au sein de Daesign, je me suis également beaucoup interessé à VueJs en autodidacte.</div>
+            <div>J'ai principalement travaillé sur Angular au sein de Daesign, je me suis également beaucoup intéressé à VueJs en autodidacte.</div>
           </v-container>
         </v-card>
       </v-col>
@@ -70,6 +71,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.me{
+  margin-bottom: 40px;
+}
 a {
   text-decoration: none;
   color: black !important;

@@ -9,6 +9,8 @@
     <div class="homeContent">
       <v-container>
         <Me></Me>
+        <v-divider></v-divider>
+        <Course></Course>
       </v-container>
     </div>
   </div>
@@ -16,10 +18,11 @@
 
 <script>
 import Me from "../components/Me";
+import Course from "../components/Course";
 
 export default {
   name: "Home",
-  components: { Me },
+  components: { Me, Course },
 };
 </script>
 <style lang="scss" scoped>
@@ -32,8 +35,14 @@ export default {
 #videoBackground {
   overflow: hidden;
 }
+@media (max-width : 550px) {
+  .homeContent{
+      height: calc(100vh - 56px) !important;
+  }
+}
+
 .homeContent {
-  background-color: rgba(1, 1, 1, 0.9);
+  background-color: rgba(1, 1, 1, 0.8);
   height: calc(100vh - 64px);
   width: 100%;
   position: absolute;
