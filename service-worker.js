@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.2d8d5e81a2b86c00a6be40179762e84b.js"
+  "/precache-manifest.004f1daae81c2df9f97144011950bd54.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "remifrontierewebsite"});
